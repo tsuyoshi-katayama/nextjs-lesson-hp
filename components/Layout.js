@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "next/image"
 
 ///
-/// <param children>子要素</param>
+/// <param children>子要素: 呼び出し側で<Layout title="ss"> value </Layout> としたときのvalue </param>
 /// <param title>ページタイトル</param>
 /// 
 export default function Layout({
