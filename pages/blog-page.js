@@ -10,8 +10,13 @@ const Blog = ({ posts }) => {
     return (
         <Layout title="Blog">
             <ul className="m-10">
-                {/** keyはReact内部でListの際に用いる */}
-                { posts && posts.map((post) => <Post key={post.id} post={post} />)}
+                { 
+                    posts && posts.map((post) => {
+                        console.log("id:" + post.id + " /  title:" + post.title);
+                         {/** keyはReact内部でListの際に用いる */}
+                        return <Post key={post.id} post={post} />
+                    })
+                }
             </ul>
         </Layout>
     );
