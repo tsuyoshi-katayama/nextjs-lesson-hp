@@ -6,7 +6,7 @@ import Post from "../components/Post"
 import { getAllPostsData } from "../lib/posts"
 
 // blog-page => Blog(大文字で始まる)に変更
-const Blog = ({ posts }) => {
+export default function Blog ({ posts })  {
     return (
         <Layout title="Blog">
             <ul className="m-10">
@@ -22,7 +22,7 @@ const Blog = ({ posts }) => {
     );
 };
 
-export default Blog;
+// export default Blog;
 
 /** 起動時に一度だけ、ServerSideで実行される */
 export async function getStaticProps() {
