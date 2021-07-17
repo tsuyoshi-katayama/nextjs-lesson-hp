@@ -43,8 +43,8 @@ export default function Layout({
                     rel="noopener noreferrer"
                 >
                     Powered by{' '}
-                    { /*<Image className="h-4 .ml-2" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */ }
-                    <img className="h-4 .ml-2" src="/vercel.svg" alt="Vercel Logo" />
+                    { <Image className="h-4 .ml-2" src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> }
+                    { /* <img className="h-4 .ml-2" src="/vercel.svg" alt="Vercel Logo" /> */ }
                 </a>
             </footer>
         </div>
