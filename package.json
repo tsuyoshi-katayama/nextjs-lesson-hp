@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "devDebug": "NODE_OPTIONS='--inspect' next dev"
   },
   "dependencies": {
     "jshint": "^2.13.0",
